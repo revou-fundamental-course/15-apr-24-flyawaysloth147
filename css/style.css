@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#2c2449, #110E1B);
+}
+
+.Header-Section {
+    color: white;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.Intro-Container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+#Title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 17px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: medium;
+}
+
+#Dev-id {
+    color: rgba(255, 255, 255, 0.23)
+}
