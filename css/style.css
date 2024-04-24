@@ -3,7 +3,10 @@ html {
 }
 
 body {
-    background: linear-gradient(#2c2449, #110E1B);
+    background-image: url(https://images.unsplash.com/photo-1589306994259-a806e14b775a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .vertical-line {
@@ -26,6 +29,7 @@ body {
     left: 0px;
     right: 0px;
 }
+
 
 .Intro-Container > h1 {
     font-size: 20px;
@@ -57,7 +61,7 @@ body {
 }
 
 .Navigation {
-    padding-left: 10px;
+    padding-left: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,6 +71,7 @@ body {
 .Navigation > button {
     background: none;
     border: none;
+    border-radius: 5px;
     padding-bottom: 0px;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -76,5 +81,146 @@ body {
 
 .Navigation > button:hover {
     background: #7a7a7a73;
-    border-radius: 5px;
+}
+
+.Calculator-Section {
+    background-color: rgba(0, 0, 0, 0.481);
+
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 200px;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    border-radius: 15px;
+}
+
+.Calculator-Body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#Textarea-Title {
+    font-family: "Poppins", sans-serif;
+    font-style: medium;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+.Title-Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Temperature-Selection {
+    margin-right: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 29px;
+    align-self: flex-end;
+    background-color: #31363F;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.Textarea {
+    resize: none;
+    background-color: #222831;
+    outline: none;
+    border-radius: 10px;
+    border-color: #222831;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    width: 300px;
+}
+
+.Textarea::placeholder {
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    font-style: medium;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+}
+
+#Formula-Textarea {
+    width: 400px;
+}
+
+.Calculator-Body > button {
+    width: 45px;
+    height: 35px;
+    padding: 0px;
+    margin-top: 4%;
+    background-color: rgba(0, 0, 0, 0.23);
+    border: 2px double transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.Calculator-Body > button > img {
+    width: 85%;
+    height: 100%;
+    filter: invert(1);
+}
+
+.Action-Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#Reset-Button {
+    background-color: #246030;
+}
+
+#Calculate-Button {            
+    background-image: linear-gradient(to right, #134E5E 0%, #71B280  51%, #134E5E  100%);
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;  
+}
+
+#Calculate-Button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+           
+#Reset-Button {
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+}
+
+#Reset-Button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }

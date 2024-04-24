@@ -6,7 +6,6 @@
         <title>Temperature Calculator</title>
         
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +26,43 @@
                         </nav>
                     </div>
             </header>
-            <section>
-                <p>Input your value here</p>
+            <section class="Calculator-Section"> <!--this section is for the input and output display of the calculator-->
+                <div class="Calculator-Body">
+                    <div class="Input">
+                        <div class="Title-Container">
+                            <p id="Textarea-Title">Input</p>
+                            <select class="Temperature-Selection" id="Input-Temperature-Selection">
+                                <option selected value="1">Celcius</option>
+                                <option value="2">Fahrenheit</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Input" class="Textarea" id="Input-Textarea" cols="27" rows="4"></textarea>
+                    </div>
+                    <button>
+                        <img src="Assets/Image/Swap-Icon.png" alt="Swap-icon">
+                    </button>
+                    <div class="Output">
+                        <div class="Title-Container">
+                            <p id="Textarea-Title">Output</p>
+                            <select class="Temperature-Selection" id="Output-Temperature-Selection">
+                                <option value="1">Celcius</option>
+                                <option selected value="2">Fahrenheit</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Output" readonly class="Textarea" id="Output-Textarea" cols="27" rows="4"></textarea>
+                    </div>
+                    <div class="Formula">
+                        <p id="Textarea-Title">Formula</p>
+                        <textarea placeholder="Formula" readonly class="Textarea" id="Formula-Textarea" cols="27" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="Action-Button">
+                    <button id="Reset-Button">Reset</button>
+                    <button id="Calculate-Button">Calculate</button>
+                </div>
             </section>
         </main>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
